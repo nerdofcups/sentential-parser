@@ -1,0 +1,7 @@
+.. graphviz::
+
+     digraph {
+          node1 [ label="~" ]
+          node0 [ label="P" ]
+          node1 -> { node0 }
+     }

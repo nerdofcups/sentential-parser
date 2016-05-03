@@ -1,0 +1,11 @@
+.. graphviz::
+
+     digraph {
+          node4 [ label="&" ]
+          node0 [ label="P" ]
+          node3 [ label="->" ]
+          node1 [ label="Q" ]
+          node2 [ label="R" ]
+          node3 -> { node1 node2 }
+          node4 -> { node0 node3 }
+     }
