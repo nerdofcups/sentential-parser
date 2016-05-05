@@ -14,11 +14,11 @@ import com.att.tutorial.term.assignment1.bytearray.Term;
 
 public class TT implements Runnable {
 
-	String inputArgs;
+	String input;
 	
 	public TT(String s) {
 		
-		inputArgs = s;
+		input = s;
 		
 	}
 	
@@ -44,7 +44,7 @@ public class TT implements Runnable {
 	@Override
 	public void run() {
 		
-		ByteArrayInputStream stream = new ByteArrayInputStream(inputArgs.getBytes(StandardCharsets.UTF_8));
+		ByteArrayInputStream stream = new ByteArrayInputStream(input.getBytes(StandardCharsets.UTF_8));
 		tt(stream);
 		
 	}
