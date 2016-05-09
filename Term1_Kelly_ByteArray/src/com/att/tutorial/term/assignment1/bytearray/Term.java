@@ -28,10 +28,7 @@ public abstract class Term {
 			
 			return parseTerm(reader);
 			
-		} finally {
-			
-			nodeNum = 0;
-		}		
+		} 
 	}
 	
 	public String toString() {
