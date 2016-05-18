@@ -1,5 +1,5 @@
-\*.class
-.settings
-.classpath
-.project
-*jar
+*.class
+*/.settings
+*/.classpath
+*/.project
+*.jar
