@@ -1,16 +1,11 @@
 package com.att.tutorial.tt.assignment1.bytearray;
 
 import java.io.ByteArrayInputStream;
-
-// many formulas can be inputted through the command line arguments
-//remove reset method
-//have separate threads for each unit test
-//test that a new thread is made 
-
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-
 import com.att.tutorial.term.assignment1.bytearray.Term;
+
+//TODO: add javadocs stuff (needs to be compatible with DOXYGEN
 
 public class TT implements Runnable {
 
@@ -69,11 +64,5 @@ public class TT implements Runnable {
 		}
 		
 	}
-
-	//@Override
-	//public void run() {
-		// TODO Auto-generated method stub
-		
-	//}
 
 }

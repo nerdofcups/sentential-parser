@@ -1,0 +1,10 @@
+com\att\tutorial\term\assignment1\bytearray\Negation.class
+com\att\tutorial\term\assignment1\bytearray\Connective.class
+com\att\tutorial\term\assignment1\bytearray\Conjunction.class
+com\att\tutorial\term\assignment1\bytearray\InputSyntaxException.class
+com\att\tutorial\term\assignment1\bytearray\Operator.class
+com\att\tutorial\term\assignment1\bytearray\Biconditional.class
+com\att\tutorial\term\assignment1\bytearray\Disjunction.class
+com\att\tutorial\term\assignment1\bytearray\Term.class
+com\att\tutorial\term\assignment1\bytearray\Conditional.class
+com\att\tutorial\term\assignment1\bytearray\Sentence.class
