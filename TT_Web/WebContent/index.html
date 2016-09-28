@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hi Kirk!</title>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+
+function termGet(sentence) {
+	
+	$("#equation").empty();
+	
+	var sentence = $('#termInput').val();
+	
+	$.ajax({
+		
+		url: "TTWeb",
+		type: "get",
+		data: {term: sentence},
+		dataType: "text",
+		contentType: "text/html; charset=UTF-8",
+				
+		}).done(function (response) {
+			
+			$("#equation").append(response);
+			
+		}).fail(function (xhr, status, error) {
+			
+			alert(error);
+			
+		});
+	
+}
+
+</script>
+</head>
+<body onload="onPageLoad()">
+	<h2>Sentential Calculus Parser</h2>
+	<p id="hello">Hello!</p>
+	<p>Welcome to the Sentential Calculus Parser. Enter a sentential
+		calculus equation below to get a parsed formula and its digraph.</p>
+	<p>Note: All connectives must be surrounded by parenthesis. Ex:
+		(P&~(R|S))</p>
+	<form onsubmit="term" accept-charset="UTF-8">
+		Enter equation here: <input type="text" name="term" id="termInput"><br>
+	</form>
+	<button onclick="termGet()">Submit</button>
+	<pre id="equation"></pre>
+</body>
+</html>
