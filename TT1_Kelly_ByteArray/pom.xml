@@ -28,7 +28,7 @@
 					<target>1.8</target>
 					<compilerArgs>
 						<arg>-Xlint:all</arg>
-						<!--<arg>-Xdoclint:all/package</arg>-->
+						<!--<arg>-Xdoclint:all/package</arg> -->
 						<arg>-Werror</arg>
 					</compilerArgs>
 					<showWarnings>true</showWarnings>
@@ -37,4 +37,11 @@
 			</plugin>
 		</plugins>
 	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.mayfield</groupId>
+			<artifactId>Term</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>
